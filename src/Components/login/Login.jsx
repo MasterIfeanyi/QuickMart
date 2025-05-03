@@ -24,14 +24,6 @@ const Login = () => {
                     <form action="" className="row">
                         <div className="input-group mb-3">
                             <input 
-                                type="text" className="form-control custom-input" 
-                                placeholder="Enter your username"
-                                value={username}
-                                onChange={(e) => setuserName(e.target.value)}
-                            />
-                        </div>
-                        <div className="input-group mb-3">
-                            <input 
                                 type="email" className="form-control custom-input" 
                                 placeholder="Enter your email"
                                 value={email}
