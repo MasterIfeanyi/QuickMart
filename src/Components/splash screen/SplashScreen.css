@@ -6,7 +6,17 @@
     text-align: center;
 }
 
-.bg-color {
+.splash-screen {
     background-color: var(--brand);
     color: white;
+    opacity: 1;
+    transition: opacity 2.3s ease-out;
+    /* visibility: visible; */
 }
+
+
+.splash-screen.hidden {
+    opacity: 0;
+    /* visibility: hidden; */
+}
+  

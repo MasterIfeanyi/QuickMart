@@ -6,6 +6,7 @@
 
 :root {
   --brand: #FF3B30;
+  --white: white;
 }
 
 
@@ -60,6 +61,31 @@ ul {
 
 li{
   list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px; 
+  background-color: var(--brand);     
+  color: #ffffff;                   
+  border-radius: 5px;               
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 10px;
+  transition: all 1s ease;
+}
+
+.btn:hover {
+  background-color: #f96d66;
+  color: var(--white);
+}
+
+.btn-outline-brand {
+  background-color: white;
+  color: var(--brand);
+  border: 1px solid var(--brand);
 }
 
 
