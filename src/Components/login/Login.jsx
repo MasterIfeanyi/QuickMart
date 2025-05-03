@@ -1,12 +1,25 @@
 import "./Login.css"
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import handleLogin from "../../utils/handleLogin"
 
 const Login = () => {
 
-    const [username, setuserName] = useState("")
     const [password, setPassword] = useState("")
     const [email, setEmail] = useState("")
+
+    const {setCurrentUser, setError} = useAuth();
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await handleLogin(email, password, setCurrentUser, setError)
+            console.log("Login successful", response)
+        } catch (error) {
+            console.error("Login Failed", error)
+        }
+    }
 
   return (
     <section className="section">
@@ -21,7 +34,7 @@ const Login = () => {
                         <p className="text-muted mb-4">Enter your details to continue</p>
                     </div>
 
-                    <form action="" className="row">
+                    <form onSubmit={handleSubmit} className="row">
                         <div className="input-group mb-3">
                             <input 
                                 type="email" className="form-control custom-input" 

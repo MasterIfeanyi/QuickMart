@@ -9,7 +9,6 @@ const handleLogin = async (email, password, setError, setCurrentUser) => {
     try {
         setLoading(true);
 
-
         // Sign in with Firebase Authentication
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
 
