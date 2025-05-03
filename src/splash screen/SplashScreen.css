@@ -1,0 +1,7 @@
+.splash_message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    text-align: center;
+}
