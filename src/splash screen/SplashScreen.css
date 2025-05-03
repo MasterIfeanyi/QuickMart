@@ -5,3 +5,8 @@
     width: fit-content;
     text-align: center;
 }
+
+.bg-color {
+    background-color: #FF3B30;
+    color: white;
+}
