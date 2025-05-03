@@ -1,10 +1,13 @@
 import "./SplashScreen.css"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 
 
 const SplashScreen = () => {
 
+    const navigate = useNavigate()
+
+    const [visible, setVisible] = useState(true)
 
     useEffect(() => {
         // Redirect to main screen after 3 seconds
