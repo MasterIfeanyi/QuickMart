@@ -7,6 +7,6 @@
 }
 
 .bg-color {
-    background-color: #FF3B30;
+    background-color: var(--brand);
     color: white;
 }

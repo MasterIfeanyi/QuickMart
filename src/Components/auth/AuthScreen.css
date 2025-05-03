@@ -1,3 +1,11 @@
 .btn {
-    
+    padding: 10px 20px; 
+    background-color: var(--brand);     
+    color: #ffffff;                   
+    border-radius: 5px;               
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 10px;
 }
+
