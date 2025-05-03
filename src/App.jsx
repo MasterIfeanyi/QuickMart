@@ -15,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<SplashScreen />} />
           <Route path="auth" element={<AuthScreen />} />
+          
         </Routes>
       </Layout>
     </Router>

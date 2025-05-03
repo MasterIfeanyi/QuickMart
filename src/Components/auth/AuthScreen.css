@@ -1,6 +1,7 @@
 .fruit-basket img {
     width: 380px;
     height: 380px;
+    margin-top: 20px;
 }
 
 
@@ -16,5 +17,8 @@
     .fruit-basket img {
         width: inherit;
         height: inherit;
+    }
+    .btn {
+        margin-bottom: 10px;
     }
 }
