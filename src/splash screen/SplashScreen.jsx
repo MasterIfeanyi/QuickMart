@@ -8,12 +8,6 @@ const SplashScreen = () => {
             <img src="./eagle.png" alt="logo" className='splash-logo' />
             <p className='fw-bold fs-2'>QuickMart</p>
         </div>
-        {/* <div className="container">
-            <div className="row">
-                <div className="align-items-center justify-content-center">
-                </div>
-            </div>
-        </div> */}
     </section>
   )
 }
