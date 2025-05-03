@@ -29,9 +29,8 @@ const SplashScreen = () => {
   return (
     <section className={`section d-flex justify-content-center align-items-center splash-screen ${visible ? 'visible' : 'hidden'}`}>
         <div className="splash_message-container">
-            {/* <img src="./eagle.png" alt="logo" className='splash-logo' /> */}
-            <FiShoppingBag className="splash-logo mb-3" size={30} color="white" />
-            <p className='fw-bold fs-2 ms-2'>QuickMart</p>
+          <FiShoppingBag className="splash-logo mb-3" size={30} color="white" />
+          <p className='fw-bold fs-2 ms-2'>QuickMart</p>
         </div>
     </section>
   )

@@ -8,7 +8,9 @@ export function useAuth() {
 }
 
 export function AuthProvider({ children }) {
+
   const [currentUser, setCurrentUser] = useState(null);
+  const [error, setError] = useState("")
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -24,7 +26,9 @@ export function AuthProvider({ children }) {
     currentUser,
     setCurrentUser,
     loading,
-    setLoading
+    setLoading,
+    error,
+    setError
   };
 
   return (
