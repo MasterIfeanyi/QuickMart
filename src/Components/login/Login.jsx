@@ -1,13 +1,12 @@
+import "./Login.css"
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import "./Signup.css"
 
-const Signup = () => {
+const Login = () => {
 
     const [username, setuserName] = useState("")
     const [password, setPassword] = useState("")
     const [email, setEmail] = useState("")
-
 
   return (
     <section className="section">
@@ -18,8 +17,8 @@ const Signup = () => {
                 <div className="col-lg-7">
 
                     <div className="section-title">
-                        <h2 className="fw-bold mb-1">Create Account</h2>
-                        <p className="text-muted mb-4">Sign up to get started</p>
+                        <h2 className="fw-bold mb-1">Welcome back</h2>
+                        <p className="text-muted mb-4">Enter your details to continue</p>
                     </div>
 
                     <form action="" className="row">
@@ -51,9 +50,9 @@ const Signup = () => {
 
                     <footer className="text-center mt-auto">
                         <p className="text-muted">
-                            Already have an account ?
-                            <Link to="/login" className="ms-1 fw-medium logIn">
-                                Log In
+                            Don't have an account ?
+                            <Link to="/signup" className="ms-1 fw-medium logIn">
+                               Sign up
                             </Link>
                         </p>
                     </footer>
@@ -65,4 +64,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default Login
