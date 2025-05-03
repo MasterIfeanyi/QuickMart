@@ -2,6 +2,7 @@ import "./Login.css"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import handleLogin from "../../utils/handleLogin"
+import { useAuth } from "../../context/AuthConext"
 
 const Login = () => {
 
@@ -50,6 +51,9 @@ const Login = () => {
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                             />
+                        </div>
+                        <div>
+                            
                         </div>
                     </form>
 

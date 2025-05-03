@@ -62,16 +62,19 @@ const Signup = () => {
                         </div>
                         <div>
                             <input 
-                                type="text" 
+                                type="password" 
                                 className="form-control custom-input"
                                 placeholder="Enter your password"
                                 value={confirmPassword}
                                 onChange={(e) => setConfirmPassword(e.target.value)}
                             />
                         </div>
+                        <div className="">
+                            <button type="submit" className="btn btn-brand mt-2 w-100">Create Account</button>
+                        </div>
                     </form>
 
-                    <footer className="text-center mt-auto">
+                    <footer className="text-center mt-2">
                         <p className="text-muted">
                             Already have an account ?
                             <Link to="/login" className="ms-1 fw-medium logIn">
