@@ -1,13 +1,12 @@
+import { auth, createUserWithEmailAndPassword } from '../firebase/config';
 
 
-
-const handleSignup = async (username, email, password, setCurrentUser, setError, confirmPassword, setLoading) => {
+const handleSignup = async (username, email, password, setCurrentUser, setError, confirmPassword, setLoading, navigate) => {
     try {
 
         setError('');
 
         setLoading(true);
-
 
         if (!username || !email || !password || !confirmPassword) {
             setError("Please fill in all fields")

@@ -3,10 +3,13 @@ import { Link } from "react-router-dom"
 import "./Signup.css"
 import handleSignup from "../../utils/handleSignup"
 import { useAuth } from "../../context/AuthConext"
+import { useNavigate } from "react-router-dom"
 
 const Signup = () => {
 
     const {setCurrentUser, setError, setLoading} = useAuth();
+
+    const navigate = useNavigate();
 
     const [username, setuserName] = useState("")
     const [password, setPassword] = useState("")
@@ -16,7 +19,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await handleSignup(username, email, password, setCurrentUser, setError, confirmPassword, setLoading)
+            const response = await handleSignup(username, email, password, setCurrentUser, setError, confirmPassword, setLoading, navigate)
             console.log("Login successful", response)
         } catch (error) {
             console.error("Login Failed", error)
