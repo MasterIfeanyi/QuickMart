@@ -1,3 +1,46 @@
 .sidebar {
     background-color: var(--brand);
+    color: var(--white);
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+    width: 200px;
+}
+
+.sidebar-title {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.splash-logo {
+    margin-bottom: 0 !important;
+}
+
+
+.nav-link {
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: var(--white);
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
 }

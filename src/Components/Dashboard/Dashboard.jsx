@@ -1,4 +1,6 @@
 import "./Dashboard.css"
+import { FiShoppingBag } from "react-icons/fi";
+
 
 
 
@@ -9,13 +11,16 @@ const Dashboard = () => {
 
 
   return (
-    <section className="section">
+    <section className="">
         <div className="container-fluid">
             <div className="row">
                 {/* Sidebar Navigation */}
                 <nav className='col-md-3 col-lg-2 d-md-block sidebar'>
                     <div className="position-sticky">
-                        <h1 className='sidebar-title'>QuickMart</h1>
+                        <div className="sidebar-logo">
+                            <FiShoppingBag className="splash-logo mb-3" size={20} color="white" />
+                            <h3 className='sidebar-title'>QuickMart</h3>
+                        </div>
                         <ul className="nav flex-column">
                             <li className="nav-item">
                                 <a href="" className="nav-link active">Fashion</a>
