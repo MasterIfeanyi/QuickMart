@@ -2,8 +2,11 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import "./Signup.css"
 import handleSignup from "../../utils/handleSignup"
+import { useAuth } from "../../context/AuthConext"
 
 const Signup = () => {
+
+    const {setCurrentUser, setError, setLoading} = useAuth();
 
     const [username, setuserName] = useState("")
     const [password, setPassword] = useState("")
@@ -13,7 +16,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await handleSignup(email, password, setCurrentUser, setError, confirmPassword)
+            const response = await handleSignup(username, email, password, setCurrentUser, setError, confirmPassword, setLoading)
             console.log("Login successful", response)
         } catch (error) {
             console.error("Login Failed", error)

@@ -52,12 +52,12 @@ const Login = () => {
                                 onChange={(e) => setPassword(e.target.value)}
                             />
                         </div>
-                        <div>
-                            
+                        <div className="">
+                            <button type="submit" className="btn btn-brand mt-2 w-100">Log in</button>
                         </div>
                     </form>
 
-                    <footer className="text-center mt-auto">
+                    <footer className="text-center mt-2">
                         <p className="text-muted">
                             Don't have an account ?
                             <Link to="/signup" className="ms-1 fw-medium logIn">

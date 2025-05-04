@@ -1,7 +1,7 @@
 
 
 
-const handleSignup = async (email, password, confirmPassword) => {
+const handleSignup = async (username, email, password, setCurrentUser, setError, confirmPassword, setLoading) => {
     try {
 
         setError('');
