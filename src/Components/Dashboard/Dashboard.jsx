@@ -22,7 +22,7 @@ const Dashboard = () => {
                             <FiShoppingBag className="splash-logo mb-3" size={20} color="white" />
                             <h3 className='sidebar-title'>QuickMart</h3>
                         </div>
-                        <ul className="nav flex-column">
+                        <ul className="nav category-btns">
                             <li className="nav-item">
                                 <a href="" className="nav-link active">Fashion</a>
                             </li>
@@ -39,10 +39,10 @@ const Dashboard = () => {
 
 
                 {/* Main content */}
-                <main className="col-md-9 col-lg-9 px-md-4 py-2 main-content">
+                <main className="col-lg-9 col-md-9 px-4 py-2 main-content">
 
                     <div className="row g-4">
-                        <div className="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="photo_card">
                                 <img src="./img/gucci_shirt_model.avif" className="img-fluid"  alt="" />
                                 <div className="overlay">
@@ -57,12 +57,12 @@ const Dashboard = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div className="col-lg-4 col-md-6 col-sm-6">
                             <div className="photo_card">
                                 <img src="./img/gucci_shirt_model.avif" className="img-fluid" alt="" />
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div className="col-lg-4 col-md-6 col-sm-6">
                             <div className="photo_card">
                                 <img src="./img/gucci_shirt_model.avif" className="img-fluid" alt="" />
                             </div>

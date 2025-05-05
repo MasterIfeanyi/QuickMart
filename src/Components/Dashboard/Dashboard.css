@@ -6,10 +6,9 @@
 .sidebar {
     background-color: var(--brand);
     color: var(--white);
-    min-height: 100vh;
+    height: 100%;
     position: relative;
     padding: 20px;
-    width: 200px;
 }
 
 .sidebar-title {
@@ -61,7 +60,8 @@
 
 .main-content {
     position: relative;
-    height: 100vh;
+    height: 100%;
+    flex-wrap: nowrap;
 }
 
 .photo_card {
@@ -167,8 +167,19 @@
     }
     
     .overlay h6 {
-      font-size: 0.8rem;
       max-width: 80px;
+    }
+
+    .category-btns {
+        flex-direction: row;
+    }
+
+    .category-btns li {
+        margin-right: 30px;
+    }
+
+    .sidebar {
+        height: 20%;
     }
     
     .circle {
