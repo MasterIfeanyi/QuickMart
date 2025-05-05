@@ -6,7 +6,7 @@
 .sidebar {
     background-color: var(--brand);
     color: var(--white);
-    height: 100%;
+    min-height: 100%;
     position: relative;
     padding: 20px;
 }
@@ -185,5 +185,22 @@
     .circle {
       width: 25px;
       height: 25px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .category-btns {
+        flex-direction: row;
+    }
+
+    .category-btns li {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .sidebar {
+        min-height: 100vh;
     }
 }
