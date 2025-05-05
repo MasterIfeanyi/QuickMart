@@ -42,9 +42,9 @@ const Dashboard = () => {
                 <main className="col-md-9 col-lg-9 px-md-4 py-2 main-content">
 
                     <div className="row g-4">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                             <div className="photo_card">
-                                <img src="./img/gucci_shirt_model.avif" alt="" />
+                                <img src="./img/gucci_shirt_model.avif" className="img-fluid"  alt="" />
                                 <div className="overlay">
                                     <div>
                                         <h6 className="text-white">Balenciaga Model</h6>
@@ -52,37 +52,45 @@ const Dashboard = () => {
                                     </div>
 
                                     <div className="circle">
-                                        <FaCartShopping className="splash-logo mb-3" size={20} color="white" />
+                                        <FaCartShopping className="splash-logo mb-3" size={19} color="black" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                             <div className="photo_card">
-                                <img src="./img/gucci_shirt_model.avif" alt="" />
+                                <img src="./img/gucci_shirt_model.avif" className="img-fluid" alt="" />
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                             <div className="photo_card">
-                                <img src="./img/gucci_shirt_model.avif" alt="" />
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="photo_card">
-                                <img src="./img/gucci_shirt_model.avif" alt="" />
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="photo_card">
-                                <img src="./img/gucci_shirt_model.avif" alt="" />
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="photo_card">
-                                <img src="./img/gucci_shirt_model.avif" alt="" />
+                                <img src="./img/gucci_shirt_model.avif" className="img-fluid" alt="" />
                             </div>
                         </div>
                     </div>
+
+
+
+
+                    {/* <div className="row">
+                        <div className="col-lg-4 ">
+                            <div className="photo_card">
+                                <img src="./img/gucci_shirt_model.avif" alt="" />
+                            </div>
+                        </div>
+                        <div className="col-lg-4 ">
+                            <div className="photo_card">
+                                <img src="./img/gucci_shirt_model.avif" alt="" />
+                            </div>
+                        </div>
+                        <div className="col-lg-4 ">
+                            <div className="photo_card">
+                                <img src="./img/gucci_shirt_model.avif" alt="" />
+                            </div>
+                        </div>
+                    </div> */}
+
+
                 </main>
             </div>
         </div>
