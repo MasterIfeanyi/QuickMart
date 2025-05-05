@@ -1,5 +1,6 @@
 import "./Dashboard.css"
 import { FiShoppingBag } from "react-icons/fi";
+import { FaCartShopping } from "react-icons/fa6";
 
 
 
@@ -11,9 +12,9 @@ const Dashboard = () => {
 
 
   return (
-    <section className="">
-        <div className="container-fluid">
-            <div className="row">
+    <section className="dashboard-section">
+        <div className="container-fluid p-0">
+            <div className="row g-0">
                 {/* Sidebar Navigation */}
                 <nav className='col-md-3 col-lg-2 d-md-block sidebar'>
                     <div className="position-sticky">
@@ -38,8 +39,50 @@ const Dashboard = () => {
 
 
                 {/* Main content */}
-                <main className="col-md-9 col-lg-10 px-md-4">
+                <main className="col-md-9 col-lg-9 px-md-4 py-2 main-content">
 
+                    <div className="row g-4">
+                        <div className="col-lg-4">
+                            <div className="photo_card">
+                                <img src="./img/gucci_shirt_model.avif" alt="" />
+                                <div className="overlay">
+                                    <div>
+                                        <h6 className="text-white">Balenciaga Model</h6>
+                                        <strong className="text-white">$ 900</strong>
+                                    </div>
+
+                                    <div className="circle">
+                                        <FaCartShopping className="splash-logo mb-3" size={20} color="white" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="photo_card">
+                                <img src="./img/gucci_shirt_model.avif" alt="" />
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="photo_card">
+                                <img src="./img/gucci_shirt_model.avif" alt="" />
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="photo_card">
+                                <img src="./img/gucci_shirt_model.avif" alt="" />
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="photo_card">
+                                <img src="./img/gucci_shirt_model.avif" alt="" />
+                            </div>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="photo_card">
+                                <img src="./img/gucci_shirt_model.avif" alt="" />
+                            </div>
+                        </div>
+                    </div>
                 </main>
             </div>
         </div>
