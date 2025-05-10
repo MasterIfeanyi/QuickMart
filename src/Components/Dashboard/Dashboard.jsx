@@ -19,6 +19,12 @@ const Dashboard = () => {
         product.category === selectedCategory
     );
 
+    // Handle category selection
+    const handleCategorySelect = (category, e) => {
+        e.preventDefault(); // Prevent default anchor behavior
+        setSelectedCategory(category);
+    };
+
 
   return (
     <section className="dashboard-section">
@@ -33,13 +39,21 @@ const Dashboard = () => {
                         </div>
                         <ul className="nav category-btns">
                             <li className="nav-item">
-                                <a href="" className="nav-link active">Fashion</a>
+                                <a href="" className={`nav-link ${selectedCategory === "Fashion" ? "active" : ""}`} onClick={(e) => handleCategorySelect("Fashion", e)}>
+                                    Fashion
+                                </a>
                             </li>
                             <li className="nav-item">
-                                <a href="" className="nav-link">Computing</a>
+                                <a href="" className={`nav-link ${selectedCategory === "Computing" ? "active" : ""}`}
+                                onClick={(e) => handleCategorySelect("Computing", e)}>
+                                    Computing
+                                </a>
                             </li>
                             <li className="nav-item">
-                                <a href="" className="nav-link">Beauty</a>
+                                <a href="" className={`nav-link ${selectedCategory === "Beauty" ? "active" : ""}`}
+                                onClick={(e) => handleCategorySelect("Beauty", e)}>
+                                    Beauty
+                                </a>
                             </li>
                         </ul>
                     </div>
