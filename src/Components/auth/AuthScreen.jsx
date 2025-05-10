@@ -11,7 +11,7 @@ const AuthScreen = () => {
             <div className="row align-items-center">
                 <div className="col-lg-5">
                     <h1>Skip the store, shop from home</h1>
-                    <p>Order groceries in a few taps and get them delivered to your door</p>
+                    <p>Order products in a few taps and get them delivered to your door</p>
                     <div className="btns">
                         <Link to="/signup" className="btn btn-brand">Create account</Link>
                         <Link to="/login" className="btn btn-outline-brand">Sign in</Link>

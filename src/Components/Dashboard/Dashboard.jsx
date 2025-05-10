@@ -72,6 +72,7 @@ const Dashboard = () => {
                                     name={product.name} 
                                     image={product.image} 
                                     price={product.price}
+                                    category={product.category}
                                 />
                             </div>
                         ))) : (

@@ -2,7 +2,11 @@ import "./Dashboard.css"
 import { FiShoppingBag } from "react-icons/fi";
 import { FaCartShopping } from "react-icons/fa6";
 
-const Card = ({image, name, price}) => {
+const Card = ({image, name, price, category}) => {
+
+  const textStyle = {
+    color: category === "Beauty" ? "black" : "white"
+  };
 
 
   return (
@@ -10,8 +14,8 @@ const Card = ({image, name, price}) => {
       <img src={image} className="img-fluid"  alt={name} />
       <div className="overlay">
           <div>
-              <h6 className="text-white">{name}</h6>
-              <strong className="text-white">$ {price}</strong>
+              <h6 style={textStyle}>{name}</h6>
+              <strong style={textStyle}>$ {price}</strong>
           </div>
 
           <div className="circle">
