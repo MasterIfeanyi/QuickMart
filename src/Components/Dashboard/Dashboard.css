@@ -198,7 +198,7 @@
     }
 }
 
-
+/* Mobile screens */
 @media (max-width: 800px) {
     .category-btns {
         flex-direction: row;
@@ -206,6 +206,17 @@
 
     .category-btns li {
         margin-right: 30px;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        /* min-width: auto; */
+        /* bottom: auto; */
+    }
+
+    .main-content {
+        margin-left: 0;
     }
 }
 
