@@ -62,7 +62,7 @@ const Dashboard = () => {
 
 
                 {/* Main content */}
-                <main className="col-lg-9 col-md-9 px-4 py-2 main-content">
+                <main className="col-lg-9 col-md-10 px-4 py-2 main-content">
 
                     <div className="row g-4">
 
