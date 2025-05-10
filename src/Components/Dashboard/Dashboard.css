@@ -211,6 +211,8 @@
     .sidebar {
         position: relative;
         width: 100%;
+        position: sticky;
+        z-index: 1000;
         /* min-width: auto; */
         /* bottom: auto; */
     }
@@ -219,6 +221,13 @@
         margin-left: 0;
     }
 }
+
+@media (min-width: 800px) and (max-width: 1020px) {
+    .sidebar-title {
+        font-size: 16px;
+    }
+}
+
 
 @media (min-width: 800px) and (max-width: 1200px) {
     .sidebar {
