@@ -26,6 +26,7 @@ const products = [
       name: "Premium Tee",
       price: 550,
       image: "./img/balenciaga_trains.avif",
+      category: "Fashion"
     },
     {
       id: 5,
@@ -63,24 +64,25 @@ const products = [
       category: "Computing"
     },
     {
-      id: 4,
-      name: "Premium Tee",
+      id: 10,
+      name: "Rubiks cube",
       price: 550,
-      image: "./img/balenciaga_trains.avif",
+      image: "./computing/rubbiks cube.avif",
+      category: "Computing"
     },
     {
-      id: 5,
-      name: "Fashion Collection",
+      id: 11,
+      name: "Help Desk",
       price: 820,
-      image: "./img/gucci_shirt_model.avif",
-      category: "Fashion"
+      image: "./computing/help desk.avif",
+      category: "Computing"
     },
     {
-      id: 6,
-      name: "Luxury Edition",
-      price: 950,
-      image: "./img/gucci_model.avif",
-      category: "Fashion"
+      id: 12,
+      name: "Curved Screen",
+      price: 820,
+      image: "./computing/52 inches curved screen.avif",
+      category: "Computing"
     },
 ];
 
