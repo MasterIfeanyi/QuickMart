@@ -41,6 +41,47 @@ const products = [
       image: "./img/gucci_model.avif",
       category: "Fashion"
     },
+    {
+      id: 7,
+      name: "Reading lamp",
+      price: 900,
+      image: "./computing/reading lamp.avif",
+      category: "Computing"
+    },
+    {
+      id: 8,
+      name: "Apple vr galss",
+      price: 750,
+      image: "./computing/apple vr galss.avif",
+      category: "Computing"
+    },
+    {
+      id: 9,
+      name: "RGB setup",
+      price: 680,
+      image: "./computing/rgb setup.avif",
+      category: "Computing"
+    },
+    {
+      id: 4,
+      name: "Premium Tee",
+      price: 550,
+      image: "./img/balenciaga_trains.avif",
+    },
+    {
+      id: 5,
+      name: "Fashion Collection",
+      price: 820,
+      image: "./img/gucci_shirt_model.avif",
+      category: "Fashion"
+    },
+    {
+      id: 6,
+      name: "Luxury Edition",
+      price: 950,
+      image: "./img/gucci_model.avif",
+      category: "Fashion"
+    },
 ];
 
 
