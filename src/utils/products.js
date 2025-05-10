@@ -30,9 +30,9 @@ const products = [
     },
     {
       id: 5,
-      name: "Fashion Collection",
+      name: "Sketchers",
       price: 820,
-      image: "./img/gucci_shirt_model.avif",
+      image: "./img/sketchers.avif",
       category: "Fashion"
     },
     {
@@ -83,6 +83,48 @@ const products = [
       price: 820,
       image: "./computing/52 inches curved screen.avif",
       category: "Computing"
+    },
+    {
+      id: 13,
+      name: "Hand Cream",
+      price: 950,
+      image: "./beauty/body lotion.avif",
+      category: "Beauty"
+    },
+    {
+      id: 14,
+      name: "Green Balm",
+      price: 900,
+      image: "./beauty/green balm.avif",
+      category: "Beauty"
+    },
+    {
+      id: 15,
+      name: "Skin Tea",
+      price: 750,
+      image: "./beauty/skin tea.avif",
+      category: "Beauty"
+    },
+    {
+      id: 16,
+      name: "Makeup Kit",
+      price: 680,
+      image: "./beauty/makeup kit.avif",
+      category: "Beauty"
+    },
+    {
+      id: 17,
+      name: "Lip Stick",
+      price: 550,
+      image: "./beauty/lip stick.avif",
+      category: "Beauty"
+    },
+    {
+      id: 18,
+      name: "Lip Balm",
+      price: 820,
+      image: "./beauty/lip balm.avif",
+      category: "Beauty"
     },
 ];
 

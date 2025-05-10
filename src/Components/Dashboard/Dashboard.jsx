@@ -66,7 +66,7 @@ const Dashboard = () => {
 
                     <div className="row g-4">
 
-                        {filteredProducts.length && (filteredProducts.map((product) => (
+                        {filteredProducts.length > 0 ? (filteredProducts.map((product) => (
                             <div key={product.id} className="col-lg-4 col-md-6 col-sm-6 col-12">
                                 <Card 
                                     name={product.name} 
@@ -74,7 +74,11 @@ const Dashboard = () => {
                                     price={product.price}
                                 />
                             </div>
-                        )))}
+                        ))) : (
+                            <div className="col-12 text-center">
+                                <p>No products found in this category.</p>
+                            </div>
+                        )}
                     </div>
 
                 </main>
