@@ -31,6 +31,10 @@
     margin-bottom: 0 !important;
 }
 
+.nav {
+    flex-direction: column;
+}
+
 
 .nav-link {
     color: black;
