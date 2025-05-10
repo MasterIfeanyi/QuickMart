@@ -3,6 +3,7 @@ import { FiShoppingBag } from "react-icons/fi";
 import { FaCartShopping } from "react-icons/fa6";
 import products from "../../utils/products";
 import Card from "./Card";
+import { useState } from "react";
 
 
 
@@ -10,6 +11,13 @@ import Card from "./Card";
 const Dashboard = () => {
 
 
+    // State to track the selected category
+    const [selectedCategory, setSelectedCategory] = useState("Fashion");
+
+    // Filter products based on the selected category
+    const filteredProducts = products.filter(product => 
+        product.category === selectedCategory
+    );
 
 
   return (
@@ -45,7 +53,7 @@ const Dashboard = () => {
                     <div className="row g-4">
 
                         {products.map((product) => (
-                            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div key={product.id} className="col-lg-4 col-md-6 col-sm-6 col-12">
                                 <Card 
                                     name={product.name} 
                                     image={product.image} 

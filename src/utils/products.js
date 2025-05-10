@@ -5,18 +5,21 @@ const products = [
       name: "Balenciaga Model",
       price: 900,
       image: "./img/gucci_shirt_model.avif",
+      category: "Fashion"
     },
     {
       id: 2,
-      name: "Gucci T-Shirt",
+      name: "Gucci Boots",
       price: 750,
       image: "./img/balenciaga_boots.avif",
+      category: "Fashion"
     },
     {
       id: 3,
       name: "Designer Polo",
       price: 680,
       image: "./img/balenciaga_model.avif",
+      category: "Fashion"
     },
     {
       id: 4,
@@ -29,12 +32,14 @@ const products = [
       name: "Fashion Collection",
       price: 820,
       image: "./img/gucci_shirt_model.avif",
+      category: "Fashion"
     },
     {
       id: 6,
       name: "Luxury Edition",
       price: 950,
       image: "./img/gucci_model.avif",
+      category: "Fashion"
     },
 ];
 
