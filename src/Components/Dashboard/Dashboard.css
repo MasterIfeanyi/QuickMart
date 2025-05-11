@@ -201,7 +201,7 @@
     }
 
     .sidebar {
-        height: 20%;
+        height: auto;
     }
     
     .circle {

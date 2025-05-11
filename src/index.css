@@ -82,6 +82,16 @@ li{
   color: var(--white);
 }
 
+.btn-brand:hover {
+  background-color: #f8f9fa;
+  color: #ff3a3a;
+}
+
+.btn-brand {
+  background-color: #222;
+  color: var(--white);
+}
+
 .btn-outline-brand {
   background-color: white;
   color: var(--brand);
