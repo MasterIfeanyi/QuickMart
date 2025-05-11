@@ -31,7 +31,7 @@ const Dashboard = () => {
         <div className="container-fluid p-0">
             <div className="row g-0">
                 {/* Sidebar Navigation */}
-                <nav className='col-md-3 col-lg-3 d-md-block sidebar'>
+                <nav className='col-md-3 col-lg-3 d-md-block sidebar sticky-top'>
 
                     <div className="sidebar-logo">
                         <FiShoppingBag className="splash-logo mb-3" size={20} color="white" />
@@ -45,7 +45,7 @@ const Dashboard = () => {
                     </label>
                     
 
-                    <div className="position-sticky sidebar-container sidebar-content-wrapper">
+                    <div className="sidebar-container sidebar-content-wrapper pb-2">
                         <div className="sidebar-content">
 
 
