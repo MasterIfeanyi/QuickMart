@@ -71,7 +71,7 @@ const Dashboard = () => {
 
                             
                             
-                            <a href="" className="btn btn-brand">Logout</a>
+                            <a href="" className="btn btn-brand logout">Logout</a>
                         </div>
                     </div>
 
