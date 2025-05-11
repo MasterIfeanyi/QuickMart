@@ -14,6 +14,19 @@
     padding: 20px;
 }
 
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 80px);    
+}
+
 .sidebar-title {
     margin-bottom: 0;
     font-size: 1.5rem;
@@ -203,7 +216,7 @@
 
 /* Mobile screens */
 @media (max-width: 800px) {
-    .category-btns {
+    .nav {
         flex-direction: row;
     }
 
@@ -240,4 +253,15 @@
 
 .photo_card .black {
     color: black;
+}
+
+
+@media (max-width: 800px) {
+    .sidebar-content {
+        flex-direction: row;
+    }
+    .sidebar-container{
+        height: auto;
+    }
+
 }
