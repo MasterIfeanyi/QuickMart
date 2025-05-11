@@ -38,23 +38,28 @@ const Dashboard = () => {
                             <h3 className='sidebar-title'>QuickMart</h3>
                         </div>
                         <ul className="nav category-btns">
-                            <li className="nav-item">
-                                <a href="" className={`nav-link ${selectedCategory === "Fashion" ? "active" : ""}`} onClick={(e) => handleCategorySelect("Fashion", e)}>
-                                    Fashion
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="" className={`nav-link ${selectedCategory === "Computing" ? "active" : ""}`}
-                                onClick={(e) => handleCategorySelect("Computing", e)}>
-                                    Computing
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="" className={`nav-link ${selectedCategory === "Beauty" ? "active" : ""}`}
-                                onClick={(e) => handleCategorySelect("Beauty", e)}>
-                                    Beauty
-                                </a>
-                            </li>
+                            <div className="">
+                                <li className="nav-item">
+                                    <a href="" className={`nav-link ${selectedCategory === "Fashion" ? "active" : ""}`} onClick={(e) => handleCategorySelect("Fashion", e)}>
+                                        Fashion
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="" className={`nav-link ${selectedCategory === "Computing" ? "active" : ""}`}
+                                    onClick={(e) => handleCategorySelect("Computing", e)}>
+                                        Computing
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="" className={`nav-link ${selectedCategory === "Beauty" ? "active" : ""}`}
+                                    onClick={(e) => handleCategorySelect("Beauty", e)}>
+                                        Beauty
+                                    </a>
+                                </li>
+                            </div>
+                            <div>
+                                <a href="" className="btn btn-brand">Logout</a>
+                            </div>
                         </ul>
                     </div>
                 </nav>

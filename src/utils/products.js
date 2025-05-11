@@ -125,20 +125,6 @@ const products = [
       price: 820,
       image: "./beauty/lip balm.avif",
       category: "Beauty"
-    },
-    {
-      id: 17,
-      name: "Lip Stick",
-      price: 550,
-      image: "./beauty/lip stick.avif",
-      category: "Beauty"
-    },
-    {
-      id: 18,
-      name: "Lip Balm",
-      price: 820,
-      image: "./beauty/lip balm.avif",
-      category: "Beauty"
     }
 ];
 

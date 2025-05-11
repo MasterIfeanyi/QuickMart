@@ -34,11 +34,6 @@
     margin-bottom: 0 !important;
 }
 
-.nav {
-    flex-direction: column;
-}
-
-
 .nav-link {
     color: black;
     margin-bottom: 10px;
@@ -197,6 +192,14 @@
       height: 25px;
     }
 }
+
+@media (min-width: 1020px) {
+    .category-btns {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
 
 /* Mobile screens */
 @media (max-width: 800px) {
