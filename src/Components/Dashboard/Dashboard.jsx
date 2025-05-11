@@ -32,12 +32,59 @@ const Dashboard = () => {
             <div className="row g-0">
                 {/* Sidebar Navigation */}
                 <nav className='col-md-3 col-lg-3 d-md-block sidebar'>
-                    <div className="position-sticky sidebar-container">
+
+                    <div className="sidebar-logo">
+                        <FiShoppingBag className="splash-logo mb-3" size={20} color="white" />
+                        <h3 className='sidebar-title'>QuickMart</h3>
+                    </div>
+
+
+                    <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+                    <label htmlFor="menu-toggle" className="hamburger">
+                        ☰
+                    </label>
+                    
+
+                    <div className="position-sticky sidebar-container sidebar-content-wrapper">
+                        <div className="sidebar-content">
+
+
+                            <ul className="nav category-btns">
+                                <li className="nav-item">
+                                    <a href="" className={`nav-link ${selectedCategory === "Fashion" ? "active" : ""}`} onClick={(e) => handleCategorySelect("Fashion", e)}>
+                                        Fashion
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="" className={`nav-link ${selectedCategory === "Computing" ? "active" : ""}`}
+                                    onClick={(e) => handleCategorySelect("Computing", e)}>
+                                        Computing
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="" className={`nav-link ${selectedCategory === "Beauty" ? "active" : ""}`}
+                                    onClick={(e) => handleCategorySelect("Beauty", e)}>
+                                        Beauty
+                                    </a>
+                                </li>
+                            </ul>
+
+                            
+                            
+                            <a href="" className="btn btn-brand">Logout</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                    {/* <div className="position-sticky sidebar-container">
                         <div className="sidebar-logo">
                             <FiShoppingBag className="splash-logo mb-3" size={20} color="white" />
                             <h3 className='sidebar-title'>QuickMart</h3>
                         </div>
-                        
+
                         <div className="sidebar-content">
                             <ul className="nav category-btns">
                                 <li className="nav-item">
@@ -59,9 +106,8 @@ const Dashboard = () => {
                                 </li>
                             </ul>
                             <a href="" className="btn btn-brand">Logout</a>
-                        </div>
-                        
-                    </div>
+                        </div>  
+                    </div> */}
                 </nav>
 
 
