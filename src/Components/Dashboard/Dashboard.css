@@ -219,6 +219,15 @@
 
 /* Mobile screens */
 @media (max-width: 800px) {
+    .sidebar-content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .sidebar-container{
+        height: auto;
+    }
+
     .nav {
         flex-direction: row;
     }
@@ -238,6 +247,12 @@
 
     .main-content {
         margin-left: 0;
+    }
+
+    .category-btns {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -259,17 +274,6 @@
     color: black;
 }
 
-
-@media (max-width: 800px) {
-    .sidebar-content {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .sidebar-container{
-        height: auto;
-    }
-
-}
 
 /* Hide the checkbox */
 .menu-toggle {
