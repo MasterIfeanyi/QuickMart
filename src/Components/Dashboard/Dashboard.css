@@ -228,10 +228,6 @@
         height: auto;
     }
 
-    /* .nav {
-        flex-direction: row;
-    } */
-
     .category-btns li {
         margin-right: 30px;
     }
@@ -250,7 +246,7 @@
     }
 
     .category-btns {
-        display: block;
+        flex-direction: row;
         width: 100%;
         text-align: center;
     }
@@ -263,10 +259,6 @@
 
     .logout {
         margin-bottom: 12px;
-    }
-
-    .sidebar {
-        min-height: 100vh;
     }
 }
 
