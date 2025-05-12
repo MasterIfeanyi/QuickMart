@@ -38,6 +38,27 @@ const Dashboard = () => {
                             <FiShoppingBag className="splash-logo mb-3" size={20} color="white" />
                             <h3 className='sidebar-title'>QuickMart</h3>
                         </a>
+                        <div className="navbar-nav">
+                            <ul className="nav category-btns">
+                                <li className="nav-item">
+                                    <a href="" className={`nav-link ${selectedCategory === "Fashion" ? "active" : ""}`} onClick={(e) => handleCategorySelect("Fashion", e)}>
+                                        Fashion
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="" className={`nav-link ${selectedCategory === "Computing" ? "active" : ""}`}
+                                    onClick={(e) => handleCategorySelect("Computing", e)}>
+                                        Computing
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="" className={`nav-link ${selectedCategory === "Beauty" ? "active" : ""}`}
+                                    onClick={(e) => handleCategorySelect("Beauty", e)}>
+                                        Beauty
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
 
