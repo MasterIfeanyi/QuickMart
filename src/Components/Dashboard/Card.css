@@ -104,3 +104,10 @@
     z-index: 2 !important;
     margin-bottom: 0 !important;
 }
+
+@media (max-width: 576px) {
+    .circle {
+      width: 25px;
+      height: 25px;
+    }
+}

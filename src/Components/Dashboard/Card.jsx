@@ -19,7 +19,7 @@ const Card = ({image, name, price, category}) => {
           </div>
 
           <div className="circle">
-              <FaCartShopping className="splash-logo mb-3" size={19} color="black" />
+            <FaCartShopping className="splash-logo mb-3" size={19} color="black" />
           </div>
       </div>
     </div>

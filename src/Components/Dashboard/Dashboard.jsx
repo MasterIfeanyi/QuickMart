@@ -47,7 +47,7 @@ const Dashboard = () => {
 
                     <div className={`navbar-nav`}>
                         <ul className={`nav-items ${navOpen ? "show" : ""}`}>
-                            <div>
+                            <div className="nav-links">
                                 <li className="nav-item">
                                     <a href="" className={`nav-link ${selectedCategory === "Fashion" ? "active" : ""}`} onClick={(e) => handleCategorySelect("Fashion", e)}>
                                         Fashion

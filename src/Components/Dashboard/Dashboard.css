@@ -127,11 +127,6 @@
 
 /* XS screen adjustments */
 @media (max-width: 575.98px) {
-
-    .nav-items .nav-link {
-        margin-left: 24px;
-    }
-
     .navbar {
         height: auto;
         width: 100%;
@@ -165,6 +160,7 @@
     }
 
     .nav-link {
+        margin-left: 24px;
         margin-top: 24px;
         margin-bottom: 24px;
         display: block;
@@ -194,11 +190,6 @@
     .sidebar {
         height: auto;
     }
-    
-    .circle {
-      width: 25px;
-      height: 25px;
-    }
 }
 
 @media (min-width: 1020px) {
@@ -209,8 +200,26 @@
 }
 
 
+@media (min-width: 576px) and (max-width: 800px) {
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
 /* Mobile screens */
-@media (max-width: 800px) {
+@media (max-width: 800px) {   
+    
 
     .nav-items .nav-link {
         margin-left: 24px;
