@@ -13,6 +13,14 @@
     align-items: center; */
 }
 
+.nav-items .nav-link:hover {
+    color: white;
+    background-color: #222;
+}
+
+.logo {
+    width: unset;
+}
 
 .dashboard-section {
     position: relative;
@@ -73,6 +81,7 @@
     padding: 10px 15px;
     background-color: var(--white);
     font-weight: 500;
+    transition: all 1s ease;
 }
 
 .nav-link:hover {
