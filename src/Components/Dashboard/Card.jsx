@@ -1,4 +1,4 @@
-import "./Dashboard.css"
+import "./Card.css"
 import { FiShoppingBag } from "react-icons/fi";
 import { FaCartShopping } from "react-icons/fa6";
 
