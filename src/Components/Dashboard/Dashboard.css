@@ -11,10 +11,14 @@
     width: 17.675%;
 }
 
-.nav-items .nav-link:hover {
+.sidebar-title {
     color: white;
-    background-color: #222;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    padding-bottom: 0px;
+    padding-left: 10px;
 }
+
 
 .logo {
     width: unset;
@@ -23,6 +27,32 @@
     width: fit-content;
 }
 
+
+.nav-link {
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: var(--white);
+    font-weight: 500;
+    transition: all 1s ease;
+    font-size: 13px;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+    background-color: #222;
+    color: white;
+}
+
+.nav-items .nav-link:hover {
+    color: white;
+    background-color: var(--brand);
+}
 
 
 .sidebar {
@@ -53,12 +83,6 @@
   height: calc(100% - 5px);    
 }
 
-.sidebar-title {
-    margin-bottom: 0;
-    font-size: 1.5rem;
-    padding-bottom: 0px;
-    padding-left: 10px;
-}
 
 .sidebar-logo {
     display: flex;
@@ -69,26 +93,7 @@
 }
 
 
-.nav-link {
-    color: black;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    padding: 10px 15px;
-    background-color: var(--white);
-    font-weight: 500;
-    transition: all 1s ease;
-    font-size: 13px;
-}
 
-.nav-link:hover {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.nav-link.active {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.2);
-}
 
 
 .nav-toggler {
@@ -152,7 +157,6 @@
         backdrop-filter: blur(10px); /* Apply the frosted glass effect */
         -webkit-backdrop-filter: blur(10px); /* For Safari support */
         border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Add a subtle border */
-        padding-top: 24px;
     }
 
     .show {
