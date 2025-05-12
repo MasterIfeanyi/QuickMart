@@ -198,12 +198,6 @@
     }
 }
 
-@media (min-width: 1020px) {
-    .category-btns {
-        flex-direction: column;
-        justify-content: space-between;
-    }
-}
 
 
 @media (min-width: 628px) and (max-width: 800px) {
@@ -220,6 +214,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 0px;
     }
 }
 
@@ -290,6 +285,11 @@
         flex-direction: column;
         justify-content: space-between;
         min-height: calc(100vh - 60px);
+    }
+
+    .category-btns {
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
