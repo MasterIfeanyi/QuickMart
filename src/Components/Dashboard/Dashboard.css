@@ -1,16 +1,15 @@
-.navbar {
+.navbar{
     background-color: var(--brand);
     color: var(--white);
     /* min-height: 100%;
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 16.675%;
-    padding: 20px;
-    padding-bottom: 40px;
+    width: 16.675%; */
+    padding: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center; */
+    align-items: center;
 }
 
 .nav-items .nav-link:hover {
@@ -103,11 +102,14 @@
     justify-content: center;
     font-size: 22px;
     transition: all 0.8s ease;
+    cursor: pointer;
+    display: none;
 }
 
 
 .nav-toggler:hover {
-    
+    background-color: var(--white);
+    color: var(--brand);
 }
 
 
@@ -224,6 +226,17 @@
 
 /* XS screen adjustments */
 @media (max-width: 575.98px) {
+
+    .nav-items {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-items .nav-link {
+        margin-left: 24px;
+    }
+
+
     .overlay {
       padding: 0.5rem;
     }
@@ -260,6 +273,16 @@
 
 /* Mobile screens */
 @media (max-width: 800px) {
+
+    .nav-items {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-items .nav-link {
+        margin-left: 24px;
+    }
+
     .sidebar-content {
         flex-direction: column;
         justify-content: flex-start;
