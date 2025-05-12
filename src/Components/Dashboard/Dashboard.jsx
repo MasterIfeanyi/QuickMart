@@ -1,9 +1,9 @@
 import "./Dashboard.css"
+import { useState } from "react";
 import { FiMenu, FiShoppingBag } from "react-icons/fi";
 import { FaCartShopping } from "react-icons/fa6";
 import products from "../../utils/products";
 import Card from "./Card";
-import { useState } from "react";
 
 
 
@@ -36,16 +36,18 @@ const Dashboard = () => {
     <section className="dashboard-section">
         <div className="container-fluid p-0">
             <div className="row g-0">
-                {/* Sidebar Navigation */}
 
+                {/* Sidebar Navigation */}
                 <nav className="navbar">
-                    <div className="container">
-                        <a href="" className="logo">
-                            <FiShoppingBag className="splash-logo mb-3" size={20} color="white" />
-                            <h3 className='sidebar-title'>QuickMart</h3>
-                        </a>
-                        <div className="navbar-nav">
-                            <ul className={`nav-items ${navOpen ? "show" : ""}`}>
+                    
+                    <a href="" className="logo">
+                        <FiShoppingBag className="splash-logo mb-3" size={20} color="white" />
+                        <h3 className='sidebar-title'>QuickMart</h3>
+                    </a>
+
+                    <div className={`navbar-nav`}>
+                        <ul className={`nav-items ${navOpen ? "show" : ""}`}>
+                            <div>
                                 <li className="nav-item">
                                     <a href="" className={`nav-link ${selectedCategory === "Fashion" ? "active" : ""}`} onClick={(e) => handleCategorySelect("Fashion", e)}>
                                         Fashion
@@ -63,15 +65,16 @@ const Dashboard = () => {
                                         Beauty
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-
-                        <div className="nav-toggler" onClick={toggleNav}>
-                            <FiMenu size={20} className="" />
-                        </div>
-
-
+                            </div>
+                            
+                            <a href="" className="btn btn-brand">Logout</a>
+                        </ul>
                     </div>
+
+                    <div className="nav-toggler" onClick={toggleNav}>
+                        <FiMenu size={20} className="" />
+                    </div>
+
                 </nav>
 
 
