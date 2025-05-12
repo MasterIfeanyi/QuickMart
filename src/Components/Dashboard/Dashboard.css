@@ -41,7 +41,11 @@
 
 .nav-link:hover {
     color: white;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #222;
+}
+
+.nav-item .nav-link.active {
+    color: white;
 }
 
 .nav-link.active {
@@ -51,7 +55,7 @@
 
 .nav-items .nav-link:hover {
     color: white;
-    background-color: var(--brand);
+    background-color: #222;
 }
 
 
