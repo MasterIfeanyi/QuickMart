@@ -66,6 +66,10 @@ const Dashboard = () => {
                                     </a>
                                 </li>
                             </div>
+
+                            <div className="circle">
+                                <FaCartShopping />
+                            </div>
                             
                             <a href="" className="btn btn-brand">Logout</a>
                         </ul>
