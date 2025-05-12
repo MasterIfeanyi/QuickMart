@@ -1,5 +1,5 @@
 import "./Dashboard.css"
-import { FiShoppingBag } from "react-icons/fi";
+import { FiMenu, FiShoppingBag } from "react-icons/fi";
 import { FaCartShopping } from "react-icons/fa6";
 import products from "../../utils/products";
 import Card from "./Card";
@@ -39,7 +39,7 @@ const Dashboard = () => {
                             <h3 className='sidebar-title'>QuickMart</h3>
                         </a>
                         <div className="navbar-nav">
-                            <ul className="nav category-btns">
+                            <ul className="nav-items">
                                 <li className="nav-item">
                                     <a href="" className={`nav-link ${selectedCategory === "Fashion" ? "active" : ""}`} onClick={(e) => handleCategorySelect("Fashion", e)}>
                                         Fashion
@@ -59,6 +59,12 @@ const Dashboard = () => {
                                 </li>
                             </ul>
                         </div>
+
+                        <div className="nav-toggler">
+                            <FiMenu size={20} className="" />
+                        </div>
+
+
                     </div>
                 </nav>
 
