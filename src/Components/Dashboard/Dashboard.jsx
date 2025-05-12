@@ -14,6 +14,12 @@ const Dashboard = () => {
     // State to track the selected category
     const [selectedCategory, setSelectedCategory] = useState("Fashion");
 
+    const [navOpen, setNavOpen] = useState(false);
+
+    const toggleNav = () => {
+        setNavOpen(!navOpen);
+    };
+
     // Filter products based on the selected category
     const filteredProducts = products.filter(product => 
         product.category === selectedCategory
@@ -39,7 +45,7 @@ const Dashboard = () => {
                             <h3 className='sidebar-title'>QuickMart</h3>
                         </a>
                         <div className="navbar-nav">
-                            <ul className="nav-items">
+                            <ul className={`nav-items ${navOpen ? "show" : ""}`}>
                                 <li className="nav-item">
                                     <a href="" className={`nav-link ${selectedCategory === "Fashion" ? "active" : ""}`} onClick={(e) => handleCategorySelect("Fashion", e)}>
                                         Fashion
@@ -60,7 +66,7 @@ const Dashboard = () => {
                             </ul>
                         </div>
 
-                        <div className="nav-toggler">
+                        <div className="nav-toggler" onClick={toggleNav}>
                             <FiMenu size={20} className="" />
                         </div>
 
