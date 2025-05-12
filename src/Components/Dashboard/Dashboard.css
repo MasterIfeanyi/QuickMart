@@ -149,11 +149,15 @@
         top: 100%;
         left: -100%;
         flex-direction: column;
-        background-color: var(--brand);
         padding-top: 24px;
         padding-left: 0px;
         padding-right: 24px;
         transition: all 0.9s ease-in-out;
+        background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+        backdrop-filter: blur(10px); /* Apply the frosted glass effect */
+        -webkit-backdrop-filter: blur(10px); /* For Safari support */
+        border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Add a subtle border */
+        padding-top: 24px;
     }
 
     .show {
