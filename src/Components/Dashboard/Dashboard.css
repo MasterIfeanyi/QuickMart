@@ -95,6 +95,22 @@
 }
 
 
+.nav-toggler {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: all 0.8s ease;
+}
+
+
+.nav-toggler:hover {
+    
+}
+
+
 @media (max-width: 300px) {
     .sidebar-title {
         font-size: 14px;
