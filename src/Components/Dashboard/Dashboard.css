@@ -131,7 +131,7 @@
 
 
 /* XS screen adjustments */
-@media (max-width: 575.98px) {
+@media (max-width: 628px) {
     .navbar {
         height: auto;
         width: 100%;
@@ -144,9 +144,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 100vh;
         position: absolute;
         top: 100%;
+        min-height: calc(100vh - 75px);
         left: -100%;
         flex-direction: column;
         padding-top: 24px;
@@ -164,9 +164,7 @@
     }
 
     .nav-link {
-        margin-left: 24px;
-        margin-top: 24px;
-        margin-bottom: 24px;
+        margin: 24px 0px 24px 24px;
         display: block;
     }
 
@@ -204,14 +202,15 @@
 }
 
 
-@media (min-width: 576px) and (max-width: 800px) {
+@media (min-width: 628px) and (max-width: 800px) {
     .nav-links {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        margin-right: 20px;
     }
-
+    
     .nav-items {
         display: flex;
         flex-direction: row;
@@ -222,8 +221,7 @@
 
 
 /* Mobile screens */
-@media (max-width: 800px) {   
-    
+@media (max-width: 800px) {     
 
     .nav-items .nav-link {
         margin-left: 24px;
@@ -280,6 +278,16 @@
     }
 }
 
+
+@media (min-width: 800px) {
+    .nav-items {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: calc(100vh - 60px);
+    }
+}
 
 
 /* Hide the checkbox */
