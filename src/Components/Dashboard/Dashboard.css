@@ -1,15 +1,19 @@
 .navbar{
     background-color: var(--brand);
     color: var(--white);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 17.675%;
     /* min-height: 100%;
     position: fixed;
     top: 0;
     bottom: 0;
     width: 16.675%; */
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .nav-items .nav-link:hover {
@@ -19,6 +23,9 @@
 
 .logo {
     width: unset;
+    display: flex;
+    align-items: center;
+    width: fit-content;
 }
 
 .dashboard-section {
@@ -81,6 +88,7 @@
     background-color: var(--white);
     font-weight: 500;
     transition: all 1s ease;
+    font-size: 13px;
 }
 
 .nav-link:hover {
@@ -236,6 +244,13 @@
         margin-left: 24px;
     }
 
+    .navbar {
+        height: auto;
+        width: 100%;
+        position: sticky;
+        z-index: 1000;
+    }
+
 
     .overlay {
       padding: 0.5rem;
@@ -281,6 +296,14 @@
 
     .nav-items .nav-link {
         margin-left: 24px;
+        margin-bottom: 0;
+    }
+
+    .navbar {
+        height: auto;
+        width: 100%;
+        position: sticky;
+        z-index: 1000;
     }
 
     .sidebar-content {
